@@ -1,0 +1,102 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../images/logo-ed.svg';
+import '../utils/bootstrap.min.css';
+import '../utils/owl.carousel.min.css';
+import '../utils/styles.css';
+---
+
+<header class="header sticky-top bg-white">
+    <div class="container container_xl">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between py-0">
+            <a class="navbar-brand py-0" href="/">
+                <Image src={ Logo } alt="logo" width="175" height="67" aria-hidden="true" decoding="async">
+            </a>
+            <div class="header_backDrop"></div>
+            <div class="header_navContent" id="header_navContent">
+                <button class="navbar-toggler fs_md2 py-2 menu_toggleBtn d-lg-none ms-auto" type="button">
+                    <i class="fi fi-rr-cross"></i>
+                </button>
+                <div class="cs-social">
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+                <!--<ul class="navbar-nav mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="btn btn_primary btn_def w-100" href="#">Get Started</a>
+                    </li>
+                </ul>-->
+            </div>
+            <div class="ps-2 d-none d-lg-block">
+                <a class="btn btn_primary btn_def" href="/#contact">Get Started</a>
+            </div>
+            <button class="navbar-toggler fs_md2 py-2 menu_toggleBtn" type="button">
+                <i class="fi fi-rr-menu-burger"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+<style>
+   .cs-social {
+    height: 3rem;
+    opacity: 1;
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s, visibility 0.3s, height 0.3s;
+   } 
+   .cs-social-link {
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+   }
+   .cs-social-link:hover {
+    background-color: #ea712b;
+  }
+  .cs-social-link:hover .cs-social-icon {
+    opacity: 1;
+    filter: grayscale(1) brightness(10000%);
+  }
+  .cs-social-icon {
+    width: 1.25rem;
+    height: auto;
+    opacity: 0.6;
+    display: block;
+    transition: opacity 0.3s;
+  }
+
+
+</style>
