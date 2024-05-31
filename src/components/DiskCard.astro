@@ -1,8 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import Disk1 from '../images/disk1.webp';
-import Disk2 from '../images/disk2.webp';
-import Disk3 from '../images/disk3.webp';
+import Disk1 from '../images/Disk1.png';
+import Disk2 from '../images/Disk2.png';
+import Disk3 from '../images/Disk3.png';
 ---
 <!-- ============================================ -->
 <!--                    Services                  -->
@@ -12,25 +12,13 @@ import Disk3 from '../images/disk3.webp';
     <div class="cs-container">
         <ul class="cs-card-group">
             <li class="cs-item">
-                <picture class="cs-background">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg">
-                    <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting1.jpg" alt="construction" width="305" height="305" aria-hidden="true">
-                </picture>
+                <Image src={ Disk1 } class="cs-background" alt="EngageDisk mockup" width="325" height="306" aria-hidden="true" decoding="async"></Image>
             </li>
             <li class="cs-item">
-                <picture class="cs-background">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg">
-                    <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting2.jpg" alt="construction" width="305" height="305" aria-hidden="true">
-                </picture>
+                <Image src={ Disk2 } class="cs-background" alt="EngageDisk mockup" width="325" height="306" aria-hidden="true" decoding="async"></Image>
             </li>
             <li class="cs-item">
-                <picture class="cs-background">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg">
-                    <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting3.jpg" alt="construction" width="305" height="305" aria-hidden="true">
-                </picture>
+                <Image src={ Disk3 } class="cs-background" alt="EngageDisk mockup" width="325" height="306" aria-hidden="true" decoding="async"></Image>>
             </li>
         </ul>
     </div>
@@ -90,7 +78,6 @@ import Disk3 from '../images/disk3.webp';
         height: 19.0625rem;
         margin: 0;
         padding: 0;
-        background-color: #000;
         border-radius: 1.5rem;
         /* clips background image corners */
         overflow: hidden;
@@ -106,11 +93,7 @@ import Disk3 from '../images/disk3.webp';
         position: relative;
         z-index: 1;
     }
-    #services-1355 .cs-item:hover .cs-background:before {
-        background-color: var(--primary);
-        opacity: 0.84;
-    }
-    #services-1355 .cs-item:hover .cs-background img {
+    #services-1355 .cs-item:hover .cs-background:hover img {
         transform: scale(1.2);
     }
     #services-1355 .cs-link {
