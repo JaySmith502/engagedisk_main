@@ -5,7 +5,7 @@
 @import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css');
 @font-face {
   font-family:"Gilroy";
-  src: url("../fonts/Gilroy-Thin.ttf");
+  src: url("~/fonts/Gilroy-Thin.ttf");
   font-weight: 100;
 }
 @font-face {
@@ -164,6 +164,7 @@ p{
 .mb_34{margin-bottom: var(--m_34) !important;}
 .mb_43{margin-bottom: var(--m_43) !important;}
 .mb_60{margin-bottom: var(--m_60) !important;}
+.mt_60{margin-top: var(--m_60) !important;}
 
 .btn{
   font-size: var(--fs_18);
@@ -342,7 +343,7 @@ p{
 }
 .divider{
   height:var(--fs_48);
-  background-image: url("../img/divider_bg.svg");
+  background-image: url("../images/divider_bg.svg");
   background-repeat: repeat-x;
   background-size: contain;
 }
@@ -443,7 +444,7 @@ p{
   min-width: 8.1875rem;
 }
 .contact_sec{
-  background-image: url("../img/contact_bg.jpg");
+  background-image: url("../images/contact_bg.jpg");
 }
 .footer{
 

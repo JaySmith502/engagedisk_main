@@ -1,0 +1,74 @@
+---
+import '../utils/bootstrap.min.css';
+import '../utils/owl.carousel.min.css';
+import '../utils/styles.css';
+import { Image } from 'astro:assets';
+import FooterLogo from '../images/EngageDisk_light.svg';
+---
+<div class="divider"></div>
+<footer class="footer text-white bg_secondary">
+    <div class="container">
+        <div class="sec_py">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <a class="d-inline-block mb_20" href="index.html">
+                        <Image src={ FooterLogo } alt="logo" width="165" height="67" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <!--<div>
+                        <h3 class="fs_20 fw-semibold mb_20">Navigation</h3>
+                        <ul class="footer_nav">
+                            <li>
+                                <a class="footer_navLink" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a class="footer_navLink" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="footer_navLink" href="#">Services</a>
+                            </li>
+                            <li>
+                                <a class="footer_navLink" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+                <!--<div class="col-6 col-md-4 col-lg-2">
+                    <div>
+                        <h3 class="fs_20 fw-semibold mb_20">Quick Links</h3>
+                        <ul class="footer_nav">
+                            <li>
+                                <a class="footer_navLink" href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a class="footer_navLink" href="#">Terms Of Service</a>
+                            </li>
+                            <li>
+                                <a class="footer_navLink" href="#">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a class="footer_navLink" href="#">Faq</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>-->
+                <div class="col-md-4 col-lg-4">
+                    <!--<div>
+                        <h3 class="fs_20 fw-semibold mb_20">Contact Us</h3>
+                        <p class="fs_16 lh_160 mb-2">Our Support and Sales team is available 24 /7 to answer your queries</p>
+                        <div class="mb-2">
+                            <a class="hover_underline text_skyBlue ff_Sora" href="tel:+1 (333) 000-0000">+1 (333) 000-0000</a>
+                        </div>
+                        <div class="mb-2">
+                            <a class="hover_underline text_skyBlue ff_Sora" href="mailto:Email@gmail.com">Email@gmail.com</a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="border-top py_30">
+            <div class="fs_16 ff_Sora text-white">Copyright &copy; 2024 EngageDisk</div>
+        </div>
+    </div>
+</footer>
