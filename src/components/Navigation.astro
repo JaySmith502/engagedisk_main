@@ -32,13 +32,13 @@
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
             <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
+            <!--<button class="cs-toggle" aria-label="mobile menu toggle">
                 <div class="cs-box" aria-hidden="true">
                     <span class="cs-line cs-line1" aria-hidden="true"></span>
                     <span class="cs-line cs-line2" aria-hidden="true"></span>
                     <span class="cs-line cs-line3" aria-hidden="true"></span>
                 </div>
-            </button>
+            </button>-->
             <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
@@ -71,6 +71,11 @@
     </div>
 </header>
 <style>
+  
+#cs-navigation .cs-nav-button {
+    line-height: 2.875rem;
+    margin-left: 1.5rem;
+  }
     /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
 <--- -------------------------- -*/
@@ -138,9 +143,6 @@
     bottom: auto;
     right: auto;
     margin: 0;
-  }
-  #dark-mode-toggle:hover {
-    cursor: pointer;
   }
 }
 
@@ -463,34 +465,6 @@
     display: flex;
   }
 }
-/* Dark Mode */
-@media only screen and (max-width: 1023px) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-top-container {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #cs-navigation .cs-top-link,
-  body.dark-mode #cs-navigation .cs-desc {
-    color: var(--bodyTextColorWhite);
-    opacity: .8;
-  }
-  body.dark-mode #cs-navigation .cs-link-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-ul-wrapper {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-li-link,
-  body.dark-mode #cs-navigation .cs-header {
-    color: var(--bodyTextColorWhite);
-  }
-}
 
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
@@ -666,22 +640,7 @@
     display: none;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-navigation .cs-drop-ul {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-drop-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
-    color: var(--bodyTextColorWhite);
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:before {
-    display: none;
-  }
-}
+
 
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
@@ -885,85 +844,9 @@
   #cs-navigation .cs-button-solid:hover:before {
     width: 100%;
   }
-  #cs-navigation .cs-nav-button {
-    line-height: 2.875rem;
-    margin-left: 1.5rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-top-container:before {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #cs-navigation .cs-li-link,
-  body.dark-mode #cs-navigation .cs-top-link {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-navigation .cs-li-link:hover,
-  body.dark-mode #cs-navigation .cs-top-link:hover {
-    color: var(--secondary);
-  }
-  body.dark-mode #cs-navigation .cs-top-link {
-    opacity: .8;
-  }
-  body.dark-mode #cs-navigation .cs-logo,
-  body.dark-mode #cs-navigation .cs-link-icon {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
-  }
+
 }
                                 
 </style>
-<script>
-    // add classes for mobile navigation toggling
-    var CSbody = document.querySelector("body");
-    const CSnavbarMenu = document.querySelector("#cs-navigation");
-    const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
 
-    CShamburgerMenu.addEventListener('click', function() {
-        CShamburgerMenu.classList.toggle("cs-active");
-        CSnavbarMenu.classList.toggle("cs-active");
-        CSbody.classList.toggle("cs-open");
-        // run the function to check the aria-expanded value
-        ariaExpanded();
-    });
-
-    // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not 
-    function ariaExpanded() {
-        const csUL = document.querySelector('#cs-expanded');
-        const csExpanded = csUL.getAttribute('aria-expanded');
-
-        if (csExpanded === 'false') {
-            csUL.setAttribute('aria-expanded', 'true');
-        } else {
-            csUL.setAttribute('aria-expanded', 'false');
-        }
-    }
-
-    // This script adds a class to the body after scrolling 100px
-    // and we used these body.scroll styles to create some on scroll 
-    // animations with the navbar
-    
-    document.addEventListener('scroll', (e) => { 
-        const scroll = document.documentElement.scrollTop;
-        if(scroll >= 100){
-    document.querySelector('body').classList.add('scroll')
-        } else {
-        document.querySelector('body').classList.remove('scroll')
-        }
-    });
-
-    // mobile nav toggle code
-    const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
-        for (const item of dropDowns) {
-            const onClick = () => {
-            item.classList.toggle('cs-active')
-        }
-        item.addEventListener('click', onClick)
-        }
-                                
-</script>
                                 

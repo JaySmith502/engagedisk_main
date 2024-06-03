@@ -158,14 +158,8 @@ Doing this will complete the overlapping "breaking the container" look.
         width: 100%;
     }
     #hero-1249 .cs-card-group {
-        /* changes to -150px at tablet */
-        margin: 0 0 -40.875rem 0;
-        padding: 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        /* 16px - 20px */
-        gap: clamp(1rem, 2.5vw, 1.25rem);
+        display: none;
+
     }
     #hero-1249 .cs-item {
         width: 100%;
@@ -322,7 +316,13 @@ Doing this will complete the overlapping "breaking the container" look.
         padding-bottom: 0;
     }
     #hero-1249 .cs-card-group {
-        margin-bottom: -9.375rem;
+        margin: 0 0 -9.375rem 0;
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.5vw, 1.25rem);
     }
     #hero-1249 .cs-item {
         grid-column: span 4;
@@ -340,6 +340,15 @@ Doing this will complete the overlapping "breaking the container" look.
     }
     #hero-1249 .cs-background img {
         display: none;
+    }
+    #hero-1249 .cs-card-group {
+        margin: 0 0 -40.875rem 0;
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.5vw, 1.25rem);
     }
 }
 
