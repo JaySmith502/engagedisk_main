@@ -1,92 +1,279 @@
----
-import '../utils/bootstrap.min.css';
-import '../utils/owl.carousel.min.css';
-import '../utils/styles.css';
----
-<section class="sec_py">
-    <div class="container">
-        <h2 class="sec_title">FAQ</h2>
-        <div class="row g_30">
-            <div class="col-md-6">
-                <div class="pe-xl-4">
-                    <h3 class="sec_subTitle mb_30">Frequently Asked Question</h3>
-                    <div class="accordion accordion-flush def_accordion" id="faq_accordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse_1" aria-expanded="true"
-                                    aria-controls="collapse_1">
-                                    Lorem ipsum dolor sit ame?
-                                </button>
-                            </h2>
-                            <div id="collapse_1" class="accordion-collapse collapse show"
-                                data-bs-parent="#faq_accordion">
-                                <div class="accordion-body pt-0 px-0">
-                                    <p class="text_gray">Sem morbi netus mauris purus eros blandit tristique at
-                                        maecenas. Eu tellus enim cursus lectus nunc.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false"
-                                    aria-controls="collapse_2">
-                                    Lorem ipsum dolor sit amet?
-                                </button>
-                            </h2>
-                            <div id="collapse_2" class="accordion-collapse collapse"
-                                data-bs-parent="#faq_accordion">
-                                <div class="accordion-body pt-0 px-0">
-                                    <p class="text_gray">Sem morbi netus mauris purus eros blandit tristique at
-                                        maecenas. Eu tellus enim cursus lectus nunc.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false"
-                                    aria-controls="collapse_3">
-                                    Lorem ipsum dolor sit amet?
-                                </button>
-                            </h2>
-                            <div id="collapse_3" class="accordion-collapse collapse"
-                                data-bs-parent="#faq_accordion">
-                                <div class="accordion-body pt-0 px-0">
-                                    <p class="text_gray">Sem morbi netus mauris purus eros blandit tristique at
-                                        maecenas. Eu tellus enim cursus lectus nunc.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="false"
-                                    aria-controls="collapse_4">
-                                    Lorem ipsum dolor sit amet?
-                                </button>
-                            </h2>
-                            <div id="collapse_4" class="accordion-collapse collapse"
-                                data-bs-parent="#faq_accordion">
-                                <div class="accordion-body pt-0 px-0">
-                                    <p class="text_gray">Sem morbi netus mauris purus eros blandit tristique at
-                                        maecenas. Eu tellus enim cursus lectus nunc.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <picture>
-                    <source media="(max-width: 600px)" srcset="https://engagedisk.b-cdn.net/team.jpg">
-                    <source media="(min-width: 601px)" srcset="https://engagedisk.b-cdn.net/team.jpg">
-                    <img decoding="async" class="img_grdShadow ce_secImg img-fluid rounded-4 rounded-xl-5" src="https://engagedisk.b-cdn.net/team.jpg" alt="a group of professionals looking at a laptop screen" width="532" height="562" aria-hidden="true">
-
-                </picture>
-            </div>
+<section id="faq-853">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://engagedisk.b-cdn.net/team.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://engagedisk.b-cdn.net/team.jpg">
+            <img loading="lazy" decoding="async" src="https://engagedisk.b-cdn.net/team.jpg" alt="a group of professionals looking at a laptop screen" width="532" height="562" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">FAQ</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What types of organizations benefit from using EngageDisk?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        EngageDisk is designed to benefit a wide range of organizations that host in-person events and meetings, such as churches, non-profits, schools, and community groups. Our NFC technology solution enables these organizations to create seamless and engaging experiences for their attendees, allowing for effortless connection and interaction.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">How does the NFC technology work, and what devices are compatible?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        EngageDisk leverages Near Field Communication (NFC) technology, which allows for wireless data transfer between two devices when they are in close proximity. Our NFC-enabled disks can be tapped against any NFC-compatible smartphone or tablet, instantly launching a customized digital link or content experience. Most modern Android devices and iPhones from the last few years have built-in NFC capabilities.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can the NFC disks be fully customized with our branding, or are there limitations?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        At EngageDisk, we understand the importance of reinforcing your brand identity. Our NFC disks can be fully customized with your organization's logo, colors, and branding elements to create a cohesive and professional experience for your attendees. We work closely with you to ensure your branding guidelines are followed, while also offering guidance on design best practices for optimal visibility and engagement.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How does the analytics dashboard work, and what metrics are tracked?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        EngageDisk's user-friendly analytics dashboard provides valuable insights into your engagement metrics, empowering you to make data-driven decisions. The dashboard tracks a comprehensive set of metrics, including tap interactions, click-through rates, audience behavior, and content engagement. With intuitive visualizations and detailed reporting, you can easily monitor the success of your events and campaigns, identifying areas for optimization and tailoring your strategies accordingly.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How often can we update the digital content linked to the EngageDisk?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        One of the key advantages of EngageDisk is the ability to keep your content fresh and relevant. Our platform allows you to update the digital link pages and content associated with your NFC disks in real-time, as often as needed or by scheduling an update. Whether it's updating event information, sharing new resources, or promoting upcoming initiatives, you have the flexibility to make changes instantly, ensuring your attendees always have access to the latest information.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can EngageDisk integrate with our existing systems (e.g., CRM, event management software)?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Absolutely. We understand that organizations often have existing systems and software in place for managing events, attendees, and data. EngageDisk is designed to seamlessly integrate with a wide range of popular CRM, event management, and other relevant platforms. Our team works closely with you to ensure a smooth setup process, minimizing disruptions to your current operations while maximizing the benefits of our NFC technology solution.
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
-<!-- ........... end Faq section ........... -->
+<style>
+    /*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-853 {
+        padding: var(--sectionPadding);
+        position: relative;
+    }
+    #faq-853 .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* 40px - 48px */
+        gap: clamp(2.5rem, 5vw, 3rem);
+    }
+    #faq-853 .cs-picture {
+        width: 100%;
+        max-width: 39.375rem;
+        /* 400px - 775px */
+        height: clamp(25rem, 95vw, 48.4375rem);
+        /* 100px - 200px */
+        border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0
+            clamp(6.25rem, 17vw, 12.5rem);
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
+        /* clips the img tag corners */
+        overflow: hidden;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+    #faq-853 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #faq-853 .cs-content {
+        text-align: left;
+        max-width: 33.875rem;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+    }
+
+    #faq-853 .cs-title {
+        /* 20 characters wide including spaces */
+        max-width: 20ch;
+        margin: 0 auto 2rem 0;
+    }
+    #faq-853 .cs-faq-group {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #faq-853 .cs-faq-item {
+        list-style: none;
+        width: 100%;
+        border-bottom: 1px solid #e8e8e8;
+        transition: border-bottom 0.3s;
+    }
+    #faq-853 .cs-faq-item.active {
+        border-color: var(--primaryLight);
+    }
+    #faq-853 .cs-faq-item.active .cs-button {
+        color: var(--primary);
+    }
+    #faq-853 .cs-faq-item.active .cs-button:before {
+        background-color: var(--primaryLight);
+        transform: rotate(315deg);
+    }
+    #faq-853 .cs-faq-item.active .cs-button:after {
+        background-color: var(--primaryLight);
+        transform: rotate(-315deg);
+    }
+    #faq-853 .cs-faq-item.active .cs-item-p {
+        height: auto;
+        /* 20px - 24px bottom */
+        padding: 0 0 clamp(1rem, 2vw, 1.5rem) 0;
+        opacity: 1;
+    }
+    #faq-853 .cs-button {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.2em;
+        text-align: left;
+        font-weight: bold;
+        /* 16px - 24px */
+        padding: clamp(1rem, 2.3vw, 1.5rem) 0;
+        border: none;
+        background: transparent;
+        color: var(--headerColor);
+        display: block;
+        width: 100%;
+        position: relative;
+        transition:
+            background-color 0.3s,
+            color 0.3s;
+    }
+    #faq-853 .cs-button:hover {
+        cursor: pointer;
+    }
+    #faq-853 .cs-button:before {
+        /* left line */
+        content: "";
+        width: 0.5rem;
+        height: 0.125rem;
+        background-color: var(--headerColor);
+        opacity: 1;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        top: 45%;
+        right: 0.25rem;
+        transform: rotate(45deg);
+        /* animate the transform from the left side of the x axis, and the center of the y */
+        transform-origin: left center;
+        transition: transform 0.5s;
+    }
+    #faq-853 .cs-button:after {
+        /* right line */
+        content: "";
+        width: 0.5rem;
+        height: 0.125rem;
+        background-color: var(--headerColor);
+        opacity: 1;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        top: 45%;
+        right: 0.0625rem;
+        transform: rotate(-45deg);
+        /* animate the transform from the right side of the x axis, and the center of the y */
+        transform-origin: right center;
+        transition: transform 0.5s;
+    }
+    #faq-853 .cs-button-text {
+        width: 90%;
+        display: block;
+    }
+    #faq-853 .cs-item-p {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        width: 90%;
+        max-width: 33.8125rem;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        color: var(--bodyTextColor);
+        /* clips the text so it doesn't show up */
+        overflow: hidden;
+        transition:
+            opacity 0.3s,
+            padding-bottom 0.3s;
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #faq-853 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #faq-853 .cs-picture {
+        width: 50%;
+        /* 500px - 750px */
+        height: clamp(31.25rem, 68vw, 46.875rem);
+    }
+    #faq-853 .cs-content {
+        width: 55%;
+        padding: 0;
+    }
+}
+
+                                
+</style>
+<script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+for (const item of faqItems) {
+	const onClick = () => {
+		item.classList.toggle('active');
+	};
+	item.addEventListener('click', onClick);
+}
+                                
+</script>
+                                
+                                
