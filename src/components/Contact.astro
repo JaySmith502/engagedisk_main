@@ -12,21 +12,28 @@ import '../utils/styles.css';
                         <div class="p-4 p-lg-5 bg-white rounded-4">
                             <h2 class="fs_56 fw_black mb_16">Contact Us</h2>
                             <p class="fs_18 text_dark mb_30">Let's work together to grow your engagement!</p>
-
+                            <form action="https://api.web3forms.com/submit" method="POST"></form>
+                            <input type="hidden" name="access_key" value="c0c447ed-490f-4346-830b-1538ad734109">
+                            <div class="mb_20">
+                            <input type="text" name="name" class="form-control" required></div>
                             <div class="mb_20">
                                 <input class="form-control" type="text" placeholder="Email">
                             </div>
                             <div class="mb_34">
                                 <textarea class="form-control" placeholder="Message" rows="4"></textarea>
                             </div>
+                            <div class="h-captcha" data-captcha="true"></div>
                             <div>
                                 <button class="btn btn_primary btn_lg fs_24 w-100">
                                     Submit
                                 </button>
                             </div>
+                        </form>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
         <!-- ........... end contact section ........... -->
