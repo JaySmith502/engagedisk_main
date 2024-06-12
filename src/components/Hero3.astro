@@ -1,24 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 import BGImage from '../images/engagedisk_hero.webp';
+import Disk1 from '../images/Disk1.png';
+import Disk2 from '../images/Disk2.png';
+import Disk3 from '../images/Disk3.png';
 import '../utils/bootstrap.min.css';
 import '../utils/owl.carousel.min.css';
 import '../utils/styles.css';
 ---
----
-<!-- Usage Notes:
-We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards an the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. 
-
-ON MOBILE (360px): add padding-top: (654/16rem); using LESS, or padding-top: calc(654 / 16 * 1rem); if you're using SCSS, or padding-top: 40.875rem; if you're just using vanilla CSS.
-
-ON TABLET (768px): Reset to padding-top: (230/16rem); using LESS, padding-top: calc(230 / 16 * 1rem) for SCSS or padding-top: 15.625rem; for CSS
-
-Doing this will complete the overlapping "breaking the container" look.
--->
-
-<!-- ============================================ -->
-<!--                    Hero                      -->
-<!-- ============================================ -->
 
 <section id="hero-1249">
     <div class="cs-container">
@@ -39,28 +28,15 @@ Doing this will complete the overlapping "breaking the container" look.
         </div>
         <ul class="cs-card-group mb_30">
             <li class="cs-item">
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="https://engagedisk.b-cdn.net/Atherton1.png">
-                    <source media="(min-width: 601px)" srcset="https://engagedisk.b-cdn.net/Atherton1.png">
-                    <img decoding="async" src="https://engagedisk.b-cdn.net/Atherton1.png" alt="a branded engagedisk for Atherton High School" width="330" height="299" aria-hidden="true">
-
-                </picture>
+                <Image src={ Disk1 } class="cs-item-background" alt="Atherton High School EngageDisk" width="500" height="500" aria-hidden="true" decoding="async">
             </li>
             <li class="cs-item">
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="https://engagedisk.b-cdn.net/TempleCrest1.png">
-                    <source media="(min-width: 601px)" srcset="https://engagedisk.b-cdn.net/TempleCrest1.png">
-                    <img decoding="async" src="https://engagedisk.b-cdn.net/TempleCrest1.png" alt="A mockup of an engagedisk for Temple Crest Church" width="330" height="299" aria-hidden="true">
-                </picture>
+                <Image src={ Disk2 } class="cs-item-background" alt="Valley View Church EngageDisk" width="500" height="500" aria-hidden="true" decoding="async">
             </li>
             <li class="cs-item">
                 <a href="" class="cs-link">
                 </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="https://engagedisk.b-cdn.net/VV%20Church1.png">
-                    <source media="(min-width: 601px)" srcset="https://engagedisk.b-cdn.net/VV%20Church1.png">
-                    <img decoding="async" src="https://engagedisk.b-cdn.net/VV%20Church1.png" alt="A mockup of an EngageDisk for Atherton High School" width="413" height="374" aria-hidden="true">
-                </picture>
+                <Image src={ Disk3 } class="cs-item-background" alt="Temple Vista Church EngageDisk" width="500" height="500" aria-hidden="true" decoding="async">
             </li>
         </ul>
     </div>
