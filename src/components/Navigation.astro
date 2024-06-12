@@ -3,27 +3,7 @@
 <!-- ============================================ -->
 
 <header id="cs-navigation">
-    <div class="cs-top-bar">
-        <div class="cs-top-container">
-            <div class="cs-top-contact">
-                <a href="" class="cs-top-link">
-                    <img class="cs-link-icon" src="https://engagedisk.b-cdn.net/usa_flag.svg" alt="logo" width="20" height="15" aria-hidden="true" decoding="async">
-                    A veteran-owned business
-                </a>
-            </div>
-            <div class="cs-top-social">
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-            </div>
-        </div>
-    </div>
+
     <div class="cs-container">
         <!--Nav Logo-->
         <a href="/" class="cs-logo" aria-label="back to home">
@@ -42,12 +22,12 @@
             <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
+                    <!--#484848<<li class="cs-li">
                         <a href="" class="cs-li-link">
                             About
                         </a>
                     </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                   
                     <li class="cs-li" tabindex="0">
                         <span class="cs-li-link">
                             How it works
@@ -58,7 +38,7 @@
                         <a href="" class="cs-li-link">
                             Blog
                         </a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </nav>
@@ -267,7 +247,7 @@
   }
   #cs-navigation .cs-container {
     width: 100%;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 1.25rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     display: flex;
@@ -747,7 +727,7 @@
     width: 100%;
     max-width: 80rem;
     margin: auto;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     /* prevents padding from affectin gheight */
     box-sizing: border-box;
     display: flex;
