@@ -2,6 +2,8 @@
 import '../utils/bootstrap.min.css';
 import '../utils/owl.carousel.min.css';
 import '../utils/styles.css';
+import { Image } from 'astro:assets';
+import Meeting from '../images/meeting.jpg';
 ---
 <section class="sec_py bg_primaryLt">
     <div class="container">
@@ -10,10 +12,7 @@ import '../utils/styles.css';
             <div class="col-md-6">
                 <div class="h-75 w-75">
                     <picture class="cs-item-background">
-                        <source media="(max-width: 600px)" srcset="https://engagedisk.b-cdn.net/meeting_mobile.jpg">
-                        <source media="(min-width: 601px)" srcset="https://engagedisk.b-cdn.net/meeting.jpg">
-                        <img decoding="async" src="https://engagedisk.b-cdn.net/meeting.jpg" alt="a mustachioed man speaking to an audience in a workroom" width="518" height="582" aria-hidden="true">
-    
+                        <Image src={ Meeting } class="" alt="A mustachioed man speaking to a group" width="518" height="582" aria-hidden="true" decoding="async"></Image>
                     </picture>
                 </div>
             </div>
