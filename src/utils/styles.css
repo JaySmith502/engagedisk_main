@@ -339,7 +339,7 @@ p{
   place-items: center;
 }
 .mobile_img{
-  width: 114.8%;
+  width: 80%;
 }
 .divider{
   height:var(--fs_48);
